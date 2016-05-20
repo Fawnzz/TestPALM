@@ -136,7 +136,7 @@
                             </h1>
 
                             <button type="button" class="palmButton btn btn-info btn-lg" data-toggle="modal" data-target="#myCreateModal">New CI</button>
-                            
+                            <button type="button" class="palmButton btn btn-info btn-lg" data-toggle="modal" data-target="#myCreateModal">New Button</button>
                             <asp:Button ID="btnOld" runat="server" CssClass="palmButton btn btn-info btn-lg" Text="View Disabled CI" OnClick="btnOld_Click" />
                                            
                         </div>
