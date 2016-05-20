@@ -138,9 +138,9 @@
                 <asp:TableRow>
                     <asp:TableCell><asp:Label ID="lblUser" runat="server" Text="User ID:"></asp:Label></asp:TableCell><asp:TableCell>
                         <asp:DropDownList ID="lstUser" runat="server">
-                            <asp:ListItem Text="2029602" Value="2029602"></asp:ListItem>
-                            <asp:ListItem Text="2004154" Value="2004154"></asp:ListItem>
-                            <asp:ListItem Text="1010101" Value="1010101"></asp:ListItem>
+                            <asp:ListItem Text="Justin" Value="2029602"></asp:ListItem>
+                            <asp:ListItem Text="Kevin" Value="2004154"></asp:ListItem>
+                            <asp:ListItem Text="Bruce" Value="1010101"></asp:ListItem>
                         </asp:DropDownList></asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
