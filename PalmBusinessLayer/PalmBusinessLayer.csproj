@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DB347CF-4372-482B-988F-C171843A04F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PalmBusinessLayer</RootNamespace>
+    <AssemblyName>PalmBusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bugs.cs" />
+    <Compile Include="Change_Request.cs" />
+    <Compile Include="Change_RequestsDB.cs" />
+    <Compile Include="CI_Comment_Log.cs" />
+    <Compile Include="CI_Event_Log.cs" />
+    <Compile Include="CI_Project_Member.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Comments.cs" />
+    <Compile Include="ConfigurationItemsDB.cs" />
+    <Compile Include="Configuration_Items.cs" />
+    <Compile Include="Dashboard.cs" />
+    <Compile Include="Date.cs" />
+    <Compile Include="Impact.cs" />
+    <Compile Include="Issue.cs" />
+    <Compile Include="IssuesDB.cs" />
+    <Compile Include="Likelihood.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Project_Comment.cs" />
+    <Compile Include="Project_Issue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QABL.cs" />
+    <Compile Include="QAEventDB.cs" />
+    <Compile Include="QA_Event.cs" />
+    <Compile Include="Risk.cs" />
+    <Compile Include="Risk_RiskDB.cs" />
+    <Compile Include="SCQ.cs" />
+    <Compile Include="Support_Doc.cs" />
+    <Compile Include="Target.cs" />
+    <Compile Include="Test_Plan.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PalmDataLayer\PalmDataLayer.csproj">
+      <Project>{586120fa-98c0-4e12-a485-02760f4308bd}</Project>
+      <Name>PalmDataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
